@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+const Login = () => {
+  return <>Login</>;
+};
 
-export default index
+export default Login;
