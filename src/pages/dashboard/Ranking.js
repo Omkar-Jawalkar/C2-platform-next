@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
+import { StudentData } from "../../../data/data";
 
 import {
   Flex,
@@ -17,6 +18,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
+import TableComponent from "./TableComponent";
 import SearchBar from "@/pages/dashboard/SearchBar";
 
 const Ranking = () => {
@@ -24,7 +26,7 @@ const Ranking = () => {
 
   return (
     <>
-      <Flex p={4}>
+      <Flex mb={20} gap={6} direction={{ base: "column" }} p={4}>
         <Flex
           width={"full"}
           gap={"10px"}
@@ -47,13 +49,23 @@ const Ranking = () => {
               <option value="option3">Github</option>
             </Select>
           </Flex>
+
+          {/* This is Analytics Button */}
+
           <Button onClick={onOpen} rightIcon={<HamburgerIcon />}>
             Analytics
           </Button>
+
+          {/* This is Download Button */}
+
           <Button rightIcon={<DownloadIcon />}>Download</Button>
         </Flex>
 
-        <Flex></Flex>
+        {/* This is Table Component */}
+
+        <Flex width={"full"}>
+          <TableComponent data={StudentData} />
+        </Flex>
       </Flex>
 
       {/* This is a Drawer */}
