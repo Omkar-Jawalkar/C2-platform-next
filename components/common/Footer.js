@@ -9,7 +9,7 @@ const Footer = () => {
       width={"100%"}
       justifyContent={"center"}
       p={6}
-      bgGradient={"linear(to-r, #2D033B, #810CA8)"}
+      backgroundColor={"#1167b1"}
       spacing={6}
     >
       <Text color={"whiteAlpha.900"} fontSize={"lg"}>

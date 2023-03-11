@@ -21,11 +21,7 @@ const MenuItem = ({ children, url, name }) => {
 
 const Navbar = () => {
   return (
-    <HStack
-      justifyContent={"space-between"}
-      p={6}
-      bgGradient="linear(to-r, #2D033B, #810CA8)"
-    >
+    <HStack justifyContent={"space-between"} p={6} backgroundColor={"#1167b1"}>
       <Heading color={"whiteAlpha.900"} size="lg">
         {" "}
         C2 Platform

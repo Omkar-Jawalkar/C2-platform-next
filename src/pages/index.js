@@ -8,5 +8,5 @@ import Footer from "../../components/common/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <>This is Home page</>;
+  return <>Local Page</>;
 }
