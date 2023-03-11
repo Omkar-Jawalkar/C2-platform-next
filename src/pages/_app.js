@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ChakraProvider>
       {" "}
-      <Box minH={"100vh"} position={"relative"}>
+      <Box backgroundColor={"#abc4ff"} minH={"100vh"} position={"relative"}>
         <Navbar />
         <Component {...pageProps} />
         <Footer />
